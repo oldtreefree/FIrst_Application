@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Стоимость бензина за "+ liters +" литра(ов) составляет = "+ total +" рублей." );
 
         // Написать программу, которая считает зарплату «на руки».
-        double salary = 40000.00; // ЗП без налога
+        double salary = 40000.00; // ЗП без налога 
         int tax_percent = 13; // % налога
         double tax = salary / 100 * tax_percent;
         double net_salary = salary - tax;
