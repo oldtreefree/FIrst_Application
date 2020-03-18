@@ -12,7 +12,7 @@ public class Main {
         // Написать программу, которая считает зарплату «на руки».
         double salary = 40000.00; // ЗП без налога
         int tax_percent = 13; // % налога
-        double tax = salary / 100 * 13;
+        double tax = salary / 100 * tax_percent;
         double net_salary = salary - tax;
         System.out.println("Зарплата «на руки» составляет = "+ net_salary +" рублей.");
 
