@@ -1,4 +1,4 @@
-package com.company;
+package ru.ishchenko.task1;
 
 import java.util.Scanner;
 
