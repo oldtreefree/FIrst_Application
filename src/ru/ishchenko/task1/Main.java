@@ -17,8 +17,8 @@ public class Main {
         System.out.println("Стоимость бензина за 1 литр составляет = " + price);
         System.out.println("Введите кол-во литров");
 
-        Scanner in = new Scanner(System.in);
-        liters = in.nextInt();
+        Scanner input = new Scanner(System.in);
+        liters = input.nextInt();
 
         double total = price * liters;
         System.out.println("Стоимость бензина за " + liters + " литра(ов) составляет = " + total + " рублей.");
@@ -29,8 +29,7 @@ public class Main {
 
         System.out.println("Впишите вашу ЗП для расчета «на руки»");
 
-        Scanner in2 = new Scanner(System.in);
-        salary = in2.nextInt();
+        salary = input.nextInt();
 
         double tax = salary / 100 * tax_percent;
         double net_salary = salary - tax;
@@ -41,8 +40,7 @@ public class Main {
 
         System.out.println("Введите секунды что бы конвертировать их в часы");
 
-        Scanner in3 = new Scanner(System.in);
-        sec = in3.nextInt();
+        sec = input.nextInt();
 
         int m = sec / 60; // Кол-во минут
         int h = m / 60; // Кол-во часов
@@ -87,7 +85,7 @@ public class Main {
             Scanner scan2 = new Scanner(System.in);
             i = scan2.nextInt();
         }
-        System.out.println("Победа");
+        System.out.println("Правильное число "+ randomNumber + ". Победа!!!");
     }
 
     static void Check(int c) {
@@ -109,6 +107,4 @@ public class Main {
                 break;
         }
     }
-
-
 }
