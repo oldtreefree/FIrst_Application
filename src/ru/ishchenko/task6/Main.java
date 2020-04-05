@@ -6,9 +6,10 @@ class Human {
     private String lastName;
     private int age;
 
-    public boolean isStudent(){
-        return true;
+    public boolean isStudent() {
+        return false;
     }
+
     public Human(String name, String lastName, int age) {
         this.name = name;
         this.lastName = lastName;
@@ -25,7 +26,7 @@ class Human {
 
 
     public int getAge() {
-        if(isStudent) {
+        if(isStudent()) {
             System.out.println("Студенту " + getLastName() + " " + this.age + " лет");
             return age;
         }
