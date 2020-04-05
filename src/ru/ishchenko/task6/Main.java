@@ -25,7 +25,7 @@ class Human {
 
 
     public int getAge() {
-        if(isStudent()) {
+        if (isStudent()) {
             System.out.println("Студенту " + getLastName() + " " + this.age + " лет");
             return age;
         }
@@ -41,7 +41,7 @@ class Teacher extends Human {
     private String subject;
 
     @Override
-    public boolean isStudent(){
+    public boolean isStudent() {
         return false;
     }
 
@@ -50,7 +50,7 @@ class Teacher extends Human {
     }
 
     public String getSubject() {
-        System.out.println("Преподаватель "+getLastName()+" препадает предмет "+ this.subject);
+        System.out.println("Преподаватель " + getLastName() + " преподает предмет " + this.subject);
         return subject;
     }
 
@@ -61,8 +61,8 @@ class Teacher extends Human {
 
 class Student extends Human {
 
-    String group; //название группы
-    int time; //Время прибытия на пары
+    String group;
+    int time; //Время прибытия на пары. talk()
 
     public Student(String name, String lastName, int age, String group) {
         super(name, lastName, age);
@@ -70,7 +70,7 @@ class Student extends Human {
     }
 
     @Override
-    public boolean isStudent(){
+    public boolean isStudent() {
         return true;
     }
 
@@ -109,7 +109,7 @@ public class Main {
         student.talk();
         student.getGroup();
 
-        Teacher teacher = new Teacher("Маргарита", "Ярцева",45);
+        Teacher teacher = new Teacher("Маргарита", "Ярцева", 45);
         teacher.setSubject("Математика");
         teacher.getSubject();
         teacher.getAge();
