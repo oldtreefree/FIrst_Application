@@ -1,7 +1,6 @@
 package ru.ishchenko.task6;
 
 class Human {
-    private boolean isStudent;
     private String name;
     private String lastName;
     private int age;
@@ -40,7 +39,6 @@ class Human {
 
 class Teacher extends Human {
     private String subject;
-    boolean isStudent = false;
 
     @Override
     public boolean isStudent(){
