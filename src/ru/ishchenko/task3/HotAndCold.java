@@ -47,6 +47,6 @@ public class HotAndCold {
             s = scan2.nextInt();
             check(s);
         }
-        System.out.println("Вы угадали!!!! Правильный ответ: " + randomNumber);
+        System.out.println("Вы угадали!!! Правильный ответ: " + randomNumber);
     }
 }
