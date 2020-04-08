@@ -28,7 +28,7 @@ public class Human {
         if (isStudent()) {
             System.out.println("Студенту " + getLastName() + " " + this.age + " лет");
             return age;
-        }
+        }else
         {
             System.out.println("Преподавателю " + getLastName() + " " + this.age + " лет");
             return age;

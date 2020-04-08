@@ -24,7 +24,8 @@ public class HotAndCold {
             start();
         } else if (i < MIN) {
             System.out.println("Вы ввели отрицательное число или 0");
-            exit();
+            System.out.println("Вы вышли из игры.");
+            System.exit(0);
         }
     }
 
@@ -47,10 +48,5 @@ public class HotAndCold {
             check(s);
         }
         System.out.println("Вы угадали!!!! Правильный ответ: " + randomNumber);
-    }
-
-    static void exit(){
-        System.out.println("Вы вышли из игры.");
-        System.exit(0);
     }
 }
