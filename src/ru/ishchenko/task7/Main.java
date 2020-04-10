@@ -1,11 +1,12 @@
 package ru.ishchenko.task7;
 
-
 public class Main {
-    public static void main(String[] args) {
-        for (Product s : Product.values()) {
-            System.out.println(s);
-        }
-    }
 
+    public static void main(String[] args) {
+        Machine machine = new Machine();
+        machine.run();
+    }
 }
+
+
+
