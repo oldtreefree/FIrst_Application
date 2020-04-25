@@ -7,7 +7,7 @@ public class Main {
             new Mom(new Son()).giveFood();
         } catch (EatException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             System.out.println("Спасибо мама");
         }
     }

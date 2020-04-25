@@ -8,12 +8,12 @@ public class Son {
         return Food.values()[i];
     }
 
-    public void eat(int i) throws EatException{
+    public void eat(int i) throws EatException {
 
-            if (getFood(i).isTasty()) {
-                System.out.println("Съел "+ getFood(i).getName() + " за обе щеки");
-            }else {
-                throw new EatException("Не захавал.");
-            }
+        if (getFood(i).isTasty()) {
+            System.out.println("Съел " + getFood(i).getName() + " за обе щеки");
+        } else {
+            throw new EatException("Не захавал.");
+        }
     }
 }
