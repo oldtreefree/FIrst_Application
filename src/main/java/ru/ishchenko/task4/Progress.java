@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Progress {
     public static void progress() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Программа может посчитать афирмитическую и геометрическую прогрессию");
+        System.out.println("Программа может посчитать арифмитическую и геометрическую прогрессию");
         System.out.println("Введите первый член прогрессии");
         int a1 = input.nextInt();
         System.out.println("Разность прогрессии (знаменатель)");
         int d = input.nextInt();
-        System.out.println("Последний член прогрессии");
+        System.out.println("Кол-во членов прогрессии");
         int n = input.nextInt();
         System.out.println("Что будем считать?");
         System.out.println("Введите от 1 или 2");
@@ -28,8 +28,8 @@ public class Progress {
         } else {
             System.out.println("Геом. прогрессия:");
             System.out.print(a1 + " ");
-            for (int i = 1; i < n; i++){
-                int a3 = a1*d;
+            for (int i = 1; i < n; i++) {
+                int a3 = a1 * d;
                 System.out.print(a3 + " ");
                 a1 = a3;
             }

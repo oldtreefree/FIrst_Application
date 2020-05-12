@@ -5,9 +5,7 @@ public class Wallet {
     private int balance = 0;
 
     public boolean isCheckBalance(int money) {
-        if (balance >= money)
-            return true;
-        return false;
+        return balance >= money;
     }
 
     public void addBalance(int money) {

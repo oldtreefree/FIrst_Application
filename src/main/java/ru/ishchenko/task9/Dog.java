@@ -1,13 +1,14 @@
 package ru.ishchenko.task9;
 
-abstract class Human implements Run, Swim {
+public class Dog extends Animal implements Swim, Run {
 
     private String name;
 
-    public Human(String name) {
+    public Dog(String name) {
         this.name = name;
     }
 
+    @Override
     public String getName() {
         return name;
     }
@@ -30,5 +31,9 @@ abstract class Human implements Run, Swim {
             System.out.println("Не плывет");
         else
             System.out.println("Статус не определен");
+    }
+
+    public void display() {
+        System.out.printf("Dog name: %s \n", name);
     }
 }

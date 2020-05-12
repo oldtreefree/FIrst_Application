@@ -5,5 +5,4 @@ public class Runner extends Human {
     public Runner(String name) {
         super(name);
     }
-
 }

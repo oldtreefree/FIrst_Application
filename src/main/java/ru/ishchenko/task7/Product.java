@@ -17,8 +17,9 @@ public enum Product {
 
     @Override
     public String toString() {
-        return "№ " + ordinal() + " Название: " + getName() + " Цена: " + getPrice();
+        return "№ " + ordinal() + " Название: " + name + " Цена: " + price;
     }
+
 
     String getName() {
         return name;

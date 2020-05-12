@@ -47,6 +47,7 @@ public class Main {
         swimmer.printStateSwim(true);
         swimmer.printStateRun(false);
 
+
     }
 }
 

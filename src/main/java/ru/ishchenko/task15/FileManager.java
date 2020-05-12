@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
-public class FileManagement {
+public class FileManager {
 
 
     public static void fileCreate() {

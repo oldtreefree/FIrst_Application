@@ -15,11 +15,6 @@ public enum Food {
 
     }
 
-    @Override
-    public String toString() {
-        return "№:" + ordinal() + " " + name;
-    }
-
     public String getName() {
         return name;
     }
@@ -27,4 +22,11 @@ public enum Food {
     public boolean isTasty() {
         return tasty;
     }
+
+    @Override
+    public String toString() {
+        return "№:" + ordinal() + " " + name;
+    }
 }
+
+

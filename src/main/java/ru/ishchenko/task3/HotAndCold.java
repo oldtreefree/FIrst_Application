@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class HotAndCold {
 
-    private static int MIN = 1, MAX = 100;
+    private static final int MIN = 1, MAX = 100;
 
     static void start() {
         Scanner scan = new Scanner(System.in);
@@ -30,22 +30,23 @@ public class HotAndCold {
     }
 
     static void logic(int i) {
-        int s = i;
         int d = 0;
         int randomNumber = MIN + (int) (Math.random() * MAX);
-        while (s != randomNumber) {
+        while (i != randomNumber) {
             int dif1 = Math.abs(randomNumber - d);
-            int dif2 = Math.abs(randomNumber - s);
-            d = s;
+            int dif2 = Math.abs(randomNumber - i);
+            d = i;
             if (dif2 < dif1) {
                 System.out.println("горячо");
-            } else {
+            } else if (dif2 > dif1) {
                 System.out.println("холодно");
+            } else {
+
             }
 
             Scanner scan2 = new Scanner(System.in);
-            s = scan2.nextInt();
-            check(s);
+            i = scan2.nextInt();
+            check(i);
         }
         System.out.println("Вы угадали!!! Правильный ответ: " + randomNumber);
     }

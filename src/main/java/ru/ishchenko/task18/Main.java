@@ -1,9 +1,6 @@
 package ru.ishchenko.task18;
 
 import java.io.*;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 
@@ -23,6 +20,7 @@ public class Main {
     }
 
     public static void createFile() {
+        File file1 = new File("ds", "sd");
         File file = new File(FILE_1);
         try {
             boolean created = file.createNewFile();

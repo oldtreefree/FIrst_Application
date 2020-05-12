@@ -4,17 +4,17 @@ public class Main {
     public static void main(String[] args) {
 
         //Создание каталога
-        DirectoryCreated.directoryCreated();
+        DirectoryCreator.create();
         //Создание файла
-        FileManagement.fileCreate();
+        FileManager.fileCreate();
         //Переименование файла
-        FileManagement.fileRename();
+        FileManager.fileRename();
         //Копирование файла
-        FileManagement.fileCopy();
+        FileManager.fileCopy();
         //Удаление файла
-        FileManagement.fileDelete();
+        FileManager.fileDelete();
         //Рекурсия колотога
-        Recursion.recursion();
+        DirectoryCreator.printContent();
 
     }
 }

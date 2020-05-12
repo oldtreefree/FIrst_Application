@@ -2,10 +2,23 @@ package ru.ishchenko.task15;
 
 import java.io.File;
 
-public class DirectoryCreated {
+public class DirectoryCreator {
 
-    public static void directoryCreated() {
+    public static void printContent() {
+        File dir = new File("C:\\task15");
+        System.out.println("-------------------------------");
+        System.out.println("Содержимое каталога " + dir);
+        if (dir.isDirectory()) {
+            for (File item : dir.listFiles()) {
+                if (item.isDirectory())
+                    System.out.println("Папка " + item.getName());
+                else
+                    System.out.println("Файл " + item.getName() + "\t Размер файла " + item.length());
+            }
+        }
+    }
 
+    public static void create() {
         File directory = new File("C:\\task15");
         File directory2 = new File("C:\\task15\\1");
 
