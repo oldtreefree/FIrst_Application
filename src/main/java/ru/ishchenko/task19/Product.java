@@ -1,5 +1,6 @@
 package ru.ishchenko.task19;
 
+
 public class Product {
 
     private String name;
