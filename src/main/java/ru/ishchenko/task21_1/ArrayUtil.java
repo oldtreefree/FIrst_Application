@@ -1,4 +1,4 @@
-package ru.ishchenko.task21;
+package ru.ishchenko.task21_1;
 
 import java.util.Arrays;
 import java.util.Random;
