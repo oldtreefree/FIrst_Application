@@ -2,15 +2,9 @@ package ru.ishchenko.task9;
 
 public class Duck extends Animal implements Fly, Swim, Run {
 
-    private String name;
-
-    public Duck(String name) {
-        this.name = name;
-    }
-
     @Override
     public String getName() {
-        return name;
+        return "Это утка";
     }
 
     @Override
@@ -42,9 +36,5 @@ public class Duck extends Animal implements Fly, Swim, Run {
             System.out.println("Не плывет");
         else
             System.out.println("Статус не определен");
-    }
-
-    public void display() {
-        System.out.printf("Duck name: %s\n", name);
     }
 }

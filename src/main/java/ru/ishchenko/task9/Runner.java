@@ -1,8 +1,9 @@
 package ru.ishchenko.task9;
 
-public class Runner extends Human {
+public class Runner extends Human implements Run {
 
-    public Runner(String name) {
-        super(name);
+    @Override
+    public String getName() {
+        return "Вася";
     }
 }

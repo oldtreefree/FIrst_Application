@@ -2,15 +2,11 @@ package ru.ishchenko.task9;
 
 public class Cat extends Animal implements Swim, Run {
 
-    private String name;
 
-    public Cat(String name) {
-        this.name = name;
-    }
 
     @Override
     public String getName() {
-        return name;
+        return "Это кошка";
     }
 
     @Override
@@ -31,9 +27,5 @@ public class Cat extends Animal implements Swim, Run {
             System.out.println("Не плывет");
         else
             System.out.println("Статус не определен");
-    }
-
-    public void display() {
-        System.out.printf("Cat name: %s \n", name);
     }
 }

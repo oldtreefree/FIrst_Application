@@ -2,15 +2,7 @@ package ru.ishchenko.task9;
 
 abstract class Human implements Swim, Run {
 
-    private String name;
-
-    public Human(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
+    public abstract String getName();
 
     @Override
     public void printStateRun(boolean r) {
