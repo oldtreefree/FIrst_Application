@@ -1,4 +1,4 @@
-package ru.ishchenko.task26;
+package ru.ishchenko.task25_1;
 
 import java.util.HashMap;
 import java.util.HashSet;

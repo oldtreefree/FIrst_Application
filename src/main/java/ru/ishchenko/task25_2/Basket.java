@@ -1,4 +1,4 @@
-package ru.ishchenko.task25;
+package ru.ishchenko.task25_2;
 
 import java.util.List;
 

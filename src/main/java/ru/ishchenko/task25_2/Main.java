@@ -1,4 +1,4 @@
-package ru.ishchenko.task25;
+package ru.ishchenko.task25_2;
 
 public class Main {
     public static void main(String[] args) {
