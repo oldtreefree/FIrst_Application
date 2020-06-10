@@ -1,18 +1,18 @@
 package ru.ishchenko.task8;
 
+import java.util.Arrays;
+import java.util.Date;
+
 public class Contract {
     private int number;
-    private int date;
-    static String[] myArray = new String[4];
+    private Date date;
+    private String[] myArray = new String[4];
 
-    public static void A() {
-        myArray[0] = "Фрукты";
+    public Contract() {
+        myArray[0] = "Диски";
         myArray[1] = "Овощи";
         myArray[2] = "Напитки";
-        myArray[3] = "Снеки";
-
-        System.out.println(myArray[2]);
-
+        myArray[3] = "Покрышки";
     }
 
     public int getNumber() {
@@ -23,19 +23,28 @@ public class Contract {
         this.number = number;
     }
 
-    public int getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
-    public static String[] getMyArray() {
+    public String[] getMyArray() {
         return myArray;
     }
 
-    public static void setMyArray(String[] myArray) {
-        Contract.myArray = myArray;
+    public void setMyArray(String[] myArray) {
+        this.myArray = myArray;
+    }
+
+    @Override
+    public String toString() {
+        return "Contract{" +
+                "number=" + number +
+                ", date=" + date +
+                ", myArray=" + Arrays.toString(myArray) +
+                '}';
     }
 }

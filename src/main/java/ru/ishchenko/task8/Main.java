@@ -1,5 +1,6 @@
 package ru.ishchenko.task8;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main extends Contract {
@@ -30,7 +31,11 @@ public class Main extends Contract {
         FinalTest finalTest = new FinalTest(6);
         System.out.println(finalTest.getA());
 
-
-        A();
+        Act act = new Act();
+        act.setDate(new Date());
+        act.setNumber(1);
+        IConverter converter = new Converter();
+        Contract contract = converter.actToContract(act);
+        System.out.println(contract.toString());
     }
 }

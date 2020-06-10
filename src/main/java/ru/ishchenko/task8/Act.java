@@ -1,18 +1,17 @@
 package ru.ishchenko.task8;
 
+import java.util.Date;
+
 public class Act {
     private int number;
-    private int date;
-    static String[] myArray = new String[4];
+    private Date date;
+    private String[] myArray = new String[4];
 
-    public static void A() {
+    public Act() {
         myArray[0] = "Фрукты";
         myArray[1] = "Овощи";
         myArray[2] = "Напитки";
         myArray[3] = "Снеки";
-
-        System.out.println(myArray[2]);
-
     }
 
     public int getNumber() {
@@ -23,19 +22,19 @@ public class Act {
         this.number = number;
     }
 
-    public int getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
-    public static String[] getMyArray() {
+    public String[] getMyArray() {
         return myArray;
     }
 
-    public static void setMyArray(String[] myArray) {
-        Act.myArray = myArray;
+    public void setMyArray(String[] myArray) {
+        this.myArray = myArray;
     }
 }
