@@ -10,13 +10,14 @@ public class Main {
         Action action = new Action() {
             @Override
             public Set<String> removeEvenLength(Set<String> set) {
-                Iterator<String> iterator = set.iterator();
+                Set<String> strings = new HashSet<>(set);
+                Iterator<String> iterator = strings.iterator();
                 while (iterator.hasNext()) {
                     if (iterator.next().length() % 2 == 0) {
                         iterator.remove();
                     }
                 }
-                return set;
+                return strings;
             }
         };
         Set<String> strings = new HashSet<>(Arrays.asList("foo", "buzz", "bar", "fork", "bort", "spoon", "!", "dude"));
